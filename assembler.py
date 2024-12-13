@@ -113,29 +113,7 @@ class Assembler:
         
         return machine_code
 
-if __name__ == "__main__":
-    program = """
-        ; CPU Section
-        .CPU
-        LDA 5           ; Load 5 into accumulator
-        STA 0x20       ; Store it in memory
-        
-        ; GPU Section
-        .GPU
-        CLEAR          ; Clear the screen
-        SETC 1        ; Set color to white
-        SETX 10       ; Set X coordinate
-        SETY 10       ; Set Y coordinate
-        RECT 20 20    ; Draw 20x20 rectangle
-        LINE 50 50    ; Draw line to (50,50)
-        GHALT         ; Stop GPU
-        
-        ; Back to CPU
-        .CPU
-        HALT          ; Stop CPU
-        ; I don't really know how to write assembly.
-    """
-    
+def main(program):
     assembler = Assembler()
     cpu = CPU()
     gpu = GPU()
