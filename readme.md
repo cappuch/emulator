@@ -1,5 +1,7 @@
 # custom cpu, gpu, assembler and language
 
+web assembler [here](https://cappuch.github.io/emulator/)
+
 # basic 8 bit cpu and gpu overview:
 
 ## cpu
